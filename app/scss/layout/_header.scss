@@ -1,0 +1,205 @@
+.nav {
+    height: 78.2px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        z-index: 1;
+
+        @include breakpoint(ipad-max) {
+            display: inline;
+            padding-left: 20px;
+            flex-wrap: wrap;
+            z-index: 3;
+            row-gap: 9px;
+            background: #fff;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 78.2px;
+        }
+    }
+
+    &__logo {
+        width: 116px;
+
+        @include breakpoint(ipad-max) {
+            width: 170px;
+        }
+    }
+
+
+
+    & &__list li {
+        display: inline-block;
+
+        @include breakpoint(ipad-max) {
+            display: block;
+            margin: 30px 0;
+        }
+
+    }
+
+    &__menu {
+        @include breakpoint(ipad-max) {
+            text-align: justify;
+            width: 30%;
+        }
+
+        @include breakpoint(mobile-max) {
+            width: 44%;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 100%;
+            text-align: inherit;
+        }
+    }
+
+    &__links {
+        color: #292727;
+        font-size: 12.8px;
+        padding-right: 34.1px;
+        font-weight: 400;
+
+        @include breakpoint (ipad-max) {
+            padding: 0;
+            font-size: 20px;
+        }
+    }
+
+    &__links:hover {
+        color: red;
+        transition: .5s;
+    }
+
+    &__price {
+        padding-right: 21.3px !important;
+    }
+
+}
+
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 991px) {
+    .nav__list {
+        display: block;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+//footer navbar start
+.navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    margin-top: 61.1px;
+    flex-wrap: wrap;
+}
+
+.nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.nav__footerlogo {
+    padding-right: 52.6px;
+
+    @include breakpoint(portrait-mobile-max) {
+        padding-right: 18px;
+    }
+}
+
+.nav__link {
+    font-size: 12.8px;
+    font-weight: 400;
+    color: $color-lightdark;
+    padding-right: 34.1px;
+&:hover{
+    color: $color-primary;
+}
+    @include breakpoint(ipad-max) {
+        padding-right: 28px;
+    }
+
+    @include breakpoint(portrait-mobile-max) {
+        padding-right: 18px;
+    }
+
+    @include breakpoint(custom-small-mobile-max) {
+        padding-right: 5px;
+    }
+}
+
+.nav__listicon {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+
+    @include breakpoint (mobile-max) {
+        margin: 20px auto;
+        width: 38%;
+    }
+    
+}
+
+.nav__icon {
+    height: 22.7px;
+    width: 22.7px;
+    background-color: $color-primary;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    padding: 13px;
+    &:hover{
+        background-color: $color-black;
+        color: $color-white;
+    }
+    a{
+        &:hover{
+            color: $color-white;
+        }
+    }
+    a i{
+        &:hover{
+            color: $color-white;
+        }
+    }
+}
+
+//footer navbar end

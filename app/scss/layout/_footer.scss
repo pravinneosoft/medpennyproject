@@ -1,0 +1,15 @@
+.footer{
+    padding: 0 0 55px 0;
+    &__hr{
+        border:0.7px solid $color-orange;
+    }
+    &__paragraph{
+        margin-top: 35.5px;
+        font-size: 12.8px;
+        font-weight: 400;
+        color:$color-black;
+        &-span{
+            color: $color-primary;
+        }
+    }
+}
